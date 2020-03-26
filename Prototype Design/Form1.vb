@@ -1,23 +1,15 @@
 ﻿Public Class Form1
     Private Sub btnFaceID_Click(sender As Object, e As EventArgs) Handles btnFaceID.Click
-        If btnFaceID.Text = "OFF" Then
-            btnFaceID.Text = "ON"
+        If btnFaceID.Text = "FaceID" Then 'off
+            btnFaceID.Text = "FaceID "  'on
             btnFaceID.BackColor = Color.LimeGreen
-        ElseIf btnFaceID.Text = "ON" Then
-            btnFaceID.Text = "OFF"
+        ElseIf btnFaceID.Text = "FaceID " Then 'on
+            btnFaceID.Text = "FaceID" 'off
             btnFaceID.BackColor = Color.Red
         End If
     End Sub
 
-    Private Sub btnRemember_Click(sender As Object, e As EventArgs) 
-        If btnRemember.Text = "OFF" Then
-            btnRemember.Text = "ON"
-            btnRemember.BackColor = Color.LimeGreen
-        ElseIf btnRemember.Text = "ON" Then
-            btnRemember.Text = "OFF"
-            btnRemember.BackColor = Color.Red
-        End If
-    End Sub
+
 
     Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
     End Sub
@@ -26,13 +18,24 @@
 
     End Sub
 
-    Private Sub btnTester_Click(sender As Object, e As EventArgs) Handles btnTester.Click
-        If btnTester.Text = "Remember me" Then
-            btnTester.Text = "Remember me "
-            btnTester.BackColor = Color.LimeGreen
-        ElseIf btnTester.Text = "Remember me " Then
-            btnTester.Text = "Remember me"
-            btnTester.BackColor = Color.Red
+    Private Sub btnRemember_Click(sender As Object, e As EventArgs) Handles btnRemember.Click
+        If btnRemember.Text = "Remember me" Then 'off
+            btnRemember.Text = "Remember me " 'on
+            btnRemember.BackColor = Color.LimeGreen
+        ElseIf btnRemember.Text = "Remember me " Then 'on
+            btnRemember.Text = "Remember me" 'off
+            btnRemember.BackColor = Color.Red
         End If
+    End Sub
+
+    Private Sub btnSignOn_Click(sender As Object, e As EventArgs) Handles btnSignOn.Click
+        txtUserID.Text = ""
+        txtPassword.Text = ""
+        btnRemember.BackColor = Color.Red
+        btnFaceID.BackColor = Color.Red
+    End Sub
+
+    Private Sub TextBox1_TextChanged(sender As Object, e As EventArgs) Handles txtUserID.TextChanged
+
     End Sub
 End Class

@@ -28,11 +28,11 @@ Partial Class Form1
         Me.Label6 = New System.Windows.Forms.Label()
         Me.btnSignOn = New System.Windows.Forms.Button()
         Me.btnFaceID = New System.Windows.Forms.Button()
-        Me.TextBox1 = New System.Windows.Forms.TextBox()
-        Me.TextBox2 = New System.Windows.Forms.TextBox()
+        Me.txtUserID = New System.Windows.Forms.TextBox()
+        Me.txtPassword = New System.Windows.Forms.TextBox()
         Me.PictureBox2 = New System.Windows.Forms.PictureBox()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
-        Me.btnTester = New System.Windows.Forms.Button()
+        Me.btnRemember = New System.Windows.Forms.Button()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
@@ -101,21 +101,21 @@ Partial Class Form1
         Me.btnFaceID.Text = "FaceID"
         Me.btnFaceID.UseVisualStyleBackColor = False
         '
-        'TextBox1
+        'txtUserID
         '
-        Me.TextBox1.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TextBox1.Location = New System.Drawing.Point(121, 185)
-        Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(176, 24)
-        Me.TextBox1.TabIndex = 9
+        Me.txtUserID.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtUserID.Location = New System.Drawing.Point(121, 185)
+        Me.txtUserID.Name = "txtUserID"
+        Me.txtUserID.Size = New System.Drawing.Size(176, 24)
+        Me.txtUserID.TabIndex = 9
         '
-        'TextBox2
+        'txtPassword
         '
-        Me.TextBox2.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TextBox2.Location = New System.Drawing.Point(121, 231)
-        Me.TextBox2.Name = "TextBox2"
-        Me.TextBox2.Size = New System.Drawing.Size(178, 24)
-        Me.TextBox2.TabIndex = 10
+        Me.txtPassword.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.txtPassword.Location = New System.Drawing.Point(121, 231)
+        Me.txtPassword.Name = "txtPassword"
+        Me.txtPassword.Size = New System.Drawing.Size(178, 24)
+        Me.txtPassword.TabIndex = 10
         '
         'PictureBox2
         '
@@ -135,16 +135,16 @@ Partial Class Form1
         Me.PictureBox1.TabIndex = 11
         Me.PictureBox1.TabStop = False
         '
-        'btnTester
+        'btnRemember
         '
-        Me.btnTester.BackColor = System.Drawing.Color.Red
-        Me.btnTester.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnTester.Location = New System.Drawing.Point(18, 389)
-        Me.btnTester.Name = "btnTester"
-        Me.btnTester.Size = New System.Drawing.Size(130, 38)
-        Me.btnTester.TabIndex = 13
-        Me.btnTester.Text = "Remember me"
-        Me.btnTester.UseVisualStyleBackColor = False
+        Me.btnRemember.BackColor = System.Drawing.Color.Red
+        Me.btnRemember.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnRemember.Location = New System.Drawing.Point(18, 389)
+        Me.btnRemember.Name = "btnRemember"
+        Me.btnRemember.Size = New System.Drawing.Size(139, 38)
+        Me.btnRemember.TabIndex = 14
+        Me.btnRemember.Text = "Remember me"
+        Me.btnRemember.UseVisualStyleBackColor = False
         '
         'Form1
         '
@@ -152,11 +152,11 @@ Partial Class Form1
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.AliceBlue
         Me.ClientSize = New System.Drawing.Size(371, 522)
-        Me.Controls.Add(Me.btnTester)
+        Me.Controls.Add(Me.btnRemember)
         Me.Controls.Add(Me.PictureBox2)
         Me.Controls.Add(Me.PictureBox1)
-        Me.Controls.Add(Me.TextBox2)
-        Me.Controls.Add(Me.TextBox1)
+        Me.Controls.Add(Me.txtPassword)
+        Me.Controls.Add(Me.txtUserID)
         Me.Controls.Add(Me.btnFaceID)
         Me.Controls.Add(Me.btnSignOn)
         Me.Controls.Add(Me.Label6)
@@ -178,9 +178,9 @@ Partial Class Form1
     Friend WithEvents Label6 As Label
     Friend WithEvents btnSignOn As Button
     Friend WithEvents btnFaceID As Button
-    Friend WithEvents TextBox1 As TextBox
-    Friend WithEvents TextBox2 As TextBox
+    Friend WithEvents txtUserID As TextBox
+    Friend WithEvents txtPassword As TextBox
     Friend WithEvents PictureBox1 As PictureBox
     Friend WithEvents PictureBox2 As PictureBox
-    Friend WithEvents btnTester As Button
+    Friend WithEvents btnRemember As Button
 End Class
