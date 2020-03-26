@@ -128,5 +128,14 @@
   <ItemGroup>
     <None Include="Resources\eye1.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Citibank_logo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\citilogo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\citilogo1.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
 </Project>
