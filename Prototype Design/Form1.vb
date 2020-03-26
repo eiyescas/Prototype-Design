@@ -9,7 +9,7 @@
         End If
     End Sub
 
-    Private Sub btnRemember_Click(sender As Object, e As EventArgs) Handles btnRemember.Click
+    Private Sub btnRemember_Click(sender As Object, e As EventArgs) 
         If btnRemember.Text = "OFF" Then
             btnRemember.Text = "ON"
             btnRemember.BackColor = Color.LimeGreen
@@ -24,5 +24,15 @@
 
     Private Sub Label1_Click(sender As Object, e As EventArgs) Handles Label1.Click
 
+    End Sub
+
+    Private Sub btnTester_Click(sender As Object, e As EventArgs) Handles btnTester.Click
+        If btnTester.Text = "Remember me" Then
+            btnTester.Text = "Remember me "
+            btnTester.BackColor = Color.LimeGreen
+        ElseIf btnTester.Text = "Remember me " Then
+            btnTester.Text = "Remember me"
+            btnTester.BackColor = Color.Red
+        End If
     End Sub
 End Class

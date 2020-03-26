@@ -25,16 +25,14 @@ Partial Class Form1
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Label3 = New System.Windows.Forms.Label()
-        Me.Label4 = New System.Windows.Forms.Label()
-        Me.Label5 = New System.Windows.Forms.Label()
         Me.Label6 = New System.Windows.Forms.Label()
         Me.btnSignOn = New System.Windows.Forms.Button()
         Me.btnFaceID = New System.Windows.Forms.Button()
-        Me.btnRemember = New System.Windows.Forms.Button()
         Me.TextBox1 = New System.Windows.Forms.TextBox()
         Me.TextBox2 = New System.Windows.Forms.TextBox()
         Me.PictureBox2 = New System.Windows.Forms.PictureBox()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
+        Me.btnTester = New System.Windows.Forms.Button()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
@@ -70,26 +68,6 @@ Partial Class Form1
         Me.Label3.TabIndex = 2
         Me.Label3.Text = "Password: "
         '
-        'Label4
-        '
-        Me.Label4.AutoSize = True
-        Me.Label4.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label4.Location = New System.Drawing.Point(12, 380)
-        Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(153, 18)
-        Me.Label4.TabIndex = 3
-        Me.Label4.Text = "Remember Password"
-        '
-        'Label5
-        '
-        Me.Label5.AutoSize = True
-        Me.Label5.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label5.Location = New System.Drawing.Point(260, 380)
-        Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(86, 18)
-        Me.Label5.TabIndex = 4
-        Me.Label5.Text = "Use FaceID"
-        '
         'Label6
         '
         Me.Label6.AutoSize = True
@@ -115,24 +93,13 @@ Partial Class Form1
         'btnFaceID
         '
         Me.btnFaceID.BackColor = System.Drawing.Color.Red
-        Me.btnFaceID.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnFaceID.Location = New System.Drawing.Point(263, 401)
+        Me.btnFaceID.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnFaceID.Location = New System.Drawing.Point(263, 389)
         Me.btnFaceID.Name = "btnFaceID"
-        Me.btnFaceID.Size = New System.Drawing.Size(75, 23)
+        Me.btnFaceID.Size = New System.Drawing.Size(75, 38)
         Me.btnFaceID.TabIndex = 7
-        Me.btnFaceID.Text = "OFF"
+        Me.btnFaceID.Text = "FaceID"
         Me.btnFaceID.UseVisualStyleBackColor = False
-        '
-        'btnRemember
-        '
-        Me.btnRemember.BackColor = System.Drawing.Color.Red
-        Me.btnRemember.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnRemember.Location = New System.Drawing.Point(35, 401)
-        Me.btnRemember.Name = "btnRemember"
-        Me.btnRemember.Size = New System.Drawing.Size(75, 23)
-        Me.btnRemember.TabIndex = 8
-        Me.btnRemember.Text = "OFF"
-        Me.btnRemember.UseVisualStyleBackColor = False
         '
         'TextBox1
         '
@@ -168,22 +135,31 @@ Partial Class Form1
         Me.PictureBox1.TabIndex = 11
         Me.PictureBox1.TabStop = False
         '
+        'btnTester
+        '
+        Me.btnTester.BackColor = System.Drawing.Color.Red
+        Me.btnTester.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnTester.Location = New System.Drawing.Point(18, 389)
+        Me.btnTester.Name = "btnTester"
+        Me.btnTester.Size = New System.Drawing.Size(130, 38)
+        Me.btnTester.TabIndex = 13
+        Me.btnTester.Text = "Remember me"
+        Me.btnTester.UseVisualStyleBackColor = False
+        '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.AliceBlue
         Me.ClientSize = New System.Drawing.Size(371, 522)
+        Me.Controls.Add(Me.btnTester)
         Me.Controls.Add(Me.PictureBox2)
         Me.Controls.Add(Me.PictureBox1)
         Me.Controls.Add(Me.TextBox2)
         Me.Controls.Add(Me.TextBox1)
-        Me.Controls.Add(Me.btnRemember)
         Me.Controls.Add(Me.btnFaceID)
         Me.Controls.Add(Me.btnSignOn)
         Me.Controls.Add(Me.Label6)
-        Me.Controls.Add(Me.Label5)
-        Me.Controls.Add(Me.Label4)
         Me.Controls.Add(Me.Label3)
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.Label1)
@@ -199,14 +175,12 @@ Partial Class Form1
     Friend WithEvents Label1 As Label
     Friend WithEvents Label2 As Label
     Friend WithEvents Label3 As Label
-    Friend WithEvents Label4 As Label
-    Friend WithEvents Label5 As Label
     Friend WithEvents Label6 As Label
     Friend WithEvents btnSignOn As Button
     Friend WithEvents btnFaceID As Button
-    Friend WithEvents btnRemember As Button
     Friend WithEvents TextBox1 As TextBox
     Friend WithEvents TextBox2 As TextBox
     Friend WithEvents PictureBox1 As PictureBox
     Friend WithEvents PictureBox2 As PictureBox
+    Friend WithEvents btnTester As Button
 End Class
