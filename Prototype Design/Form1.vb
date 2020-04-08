@@ -12,6 +12,7 @@
 
 
     Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        txtPassword.UseSystemPasswordChar = True
     End Sub
 
     Private Sub Label1_Click(sender As Object, e As EventArgs) Handles Label1.Click
@@ -40,6 +41,16 @@
     End Sub
 
     Private Sub TextBox1_TextChanged(sender As Object, e As EventArgs) Handles txtUserID.TextChanged
+
+    End Sub
+
+    Private Sub ShowPassBtn_Click(sender As Object, e As EventArgs) Handles btnShowPass.Click
+        If txtPassword.UseSystemPasswordChar = True Then
+            txtPassword.UseSystemPasswordChar = False
+        Else
+            txtPassword.UseSystemPasswordChar = True
+        End If
+
 
     End Sub
 End Class

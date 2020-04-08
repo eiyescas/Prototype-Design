@@ -22,16 +22,29 @@ Partial Class Form2
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Me.btnLogOff = New System.Windows.Forms.Button()
         Me.SuspendLayout()
+        '
+        'btnLogOff
+        '
+        Me.btnLogOff.Location = New System.Drawing.Point(305, 448)
+        Me.btnLogOff.Name = "btnLogOff"
+        Me.btnLogOff.Size = New System.Drawing.Size(75, 23)
+        Me.btnLogOff.TabIndex = 0
+        Me.btnLogOff.Text = "Log Off"
+        Me.btnLogOff.UseVisualStyleBackColor = True
         '
         'Form2
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(388, 490)
+        Me.Controls.Add(Me.btnLogOff)
         Me.Name = "Form2"
         Me.Text = "Form2"
         Me.ResumeLayout(False)
 
     End Sub
+
+    Friend WithEvents btnLogOff As Button
 End Class

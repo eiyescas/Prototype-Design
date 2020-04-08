@@ -30,12 +30,11 @@ Partial Class Form1
         Me.btnFaceID = New System.Windows.Forms.Button()
         Me.txtUserID = New System.Windows.Forms.TextBox()
         Me.txtPassword = New System.Windows.Forms.TextBox()
-        Me.PictureBox2 = New System.Windows.Forms.PictureBox()
-        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.btnRemember = New System.Windows.Forms.Button()
-        Me.Label4 = New System.Windows.Forms.Label()
+        Me.Button1 = New System.Windows.Forms.Button()
+        Me.PictureBox2 = New System.Windows.Forms.PictureBox()
+        Me.btnShowPass = New System.Windows.Forms.Button()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'Label1
@@ -118,24 +117,6 @@ Partial Class Form1
         Me.txtPassword.Size = New System.Drawing.Size(178, 24)
         Me.txtPassword.TabIndex = 10
         '
-        'PictureBox2
-        '
-        Me.PictureBox2.Image = Global.Prototype_Design.My.Resources.Resources.citilogo1
-        Me.PictureBox2.Location = New System.Drawing.Point(44, 12)
-        Me.PictureBox2.Name = "PictureBox2"
-        Me.PictureBox2.Size = New System.Drawing.Size(294, 90)
-        Me.PictureBox2.TabIndex = 12
-        Me.PictureBox2.TabStop = False
-        '
-        'PictureBox1
-        '
-        Me.PictureBox1.Image = Global.Prototype_Design.My.Resources.Resources.eye1
-        Me.PictureBox1.Location = New System.Drawing.Point(305, 222)
-        Me.PictureBox1.Name = "PictureBox1"
-        Me.PictureBox1.Size = New System.Drawing.Size(33, 33)
-        Me.PictureBox1.TabIndex = 11
-        Me.PictureBox1.TabStop = False
-        '
         'btnRemember
         '
         Me.btnRemember.BackColor = System.Drawing.Color.Red
@@ -147,16 +128,34 @@ Partial Class Form1
         Me.btnRemember.Text = "Remember me"
         Me.btnRemember.UseVisualStyleBackColor = False
         '
-        'Label4
+        'Button1
         '
-        Me.Label4.AutoSize = True
-        Me.Label4.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label4.ForeColor = System.Drawing.SystemColors.ControlText
-        Me.Label4.Location = New System.Drawing.Point(271, 446)
-        Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(67, 13)
-        Me.Label4.TabIndex = 15
-        Me.Label4.Text = "Need Help? "
+        Me.Button1.BackColor = System.Drawing.Color.Gainsboro
+        Me.Button1.Font = New System.Drawing.Font("Microsoft Sans Serif", 6.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Button1.Location = New System.Drawing.Point(263, 433)
+        Me.Button1.Name = "Button1"
+        Me.Button1.Size = New System.Drawing.Size(75, 23)
+        Me.Button1.TabIndex = 15
+        Me.Button1.Text = "Need Help?"
+        Me.Button1.UseVisualStyleBackColor = False
+        '
+        'PictureBox2
+        '
+        Me.PictureBox2.Image = Global.Prototype_Design.My.Resources.Resources.citilogo1
+        Me.PictureBox2.Location = New System.Drawing.Point(44, 12)
+        Me.PictureBox2.Name = "PictureBox2"
+        Me.PictureBox2.Size = New System.Drawing.Size(294, 90)
+        Me.PictureBox2.TabIndex = 12
+        Me.PictureBox2.TabStop = False
+        '
+        'btnShowPass
+        '
+        Me.btnShowPass.Image = Global.Prototype_Design.My.Resources.Resources.eye1
+        Me.btnShowPass.Location = New System.Drawing.Point(305, 229)
+        Me.btnShowPass.Name = "btnShowPass"
+        Me.btnShowPass.Size = New System.Drawing.Size(41, 31)
+        Me.btnShowPass.TabIndex = 16
+        Me.btnShowPass.UseVisualStyleBackColor = True
         '
         'Form1
         '
@@ -164,10 +163,10 @@ Partial Class Form1
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.AliceBlue
         Me.ClientSize = New System.Drawing.Size(371, 522)
-        Me.Controls.Add(Me.Label4)
+        Me.Controls.Add(Me.btnShowPass)
+        Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.btnRemember)
         Me.Controls.Add(Me.PictureBox2)
-        Me.Controls.Add(Me.PictureBox1)
         Me.Controls.Add(Me.txtPassword)
         Me.Controls.Add(Me.txtUserID)
         Me.Controls.Add(Me.btnFaceID)
@@ -179,7 +178,6 @@ Partial Class Form1
         Me.Name = "Form1"
         Me.Text = "Prototype Design"
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -193,8 +191,8 @@ Partial Class Form1
     Friend WithEvents btnFaceID As Button
     Friend WithEvents txtUserID As TextBox
     Friend WithEvents txtPassword As TextBox
-    Friend WithEvents PictureBox1 As PictureBox
     Friend WithEvents PictureBox2 As PictureBox
     Friend WithEvents btnRemember As Button
-    Friend WithEvents Label4 As Label
+    Friend WithEvents Button1 As Button
+    Friend WithEvents btnShowPass As Button
 End Class
