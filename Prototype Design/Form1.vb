@@ -33,6 +33,10 @@
         txtPassword.Text = ""
         btnRemember.BackColor = Color.Red
         btnFaceID.BackColor = Color.Red
+
+        Dim SecondForm As New Form2
+        SecondForm.Show()
+        Me.Hide()
     End Sub
 
     Private Sub TextBox1_TextChanged(sender As Object, e As EventArgs) Handles txtUserID.TextChanged
