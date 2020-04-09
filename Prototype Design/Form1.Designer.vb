@@ -137,7 +137,7 @@ Partial Class Form1
         Me.btnForgot.Name = "btnForgot"
         Me.btnForgot.Size = New System.Drawing.Size(160, 23)
         Me.btnForgot.TabIndex = 17
-        Me.btnForgot.Text = "Forgot Username/ Password"
+        Me.btnForgot.Text = "Forgot UserID/ Password"
         Me.btnForgot.UseVisualStyleBackColor = False
         '
         'btnShowPass
