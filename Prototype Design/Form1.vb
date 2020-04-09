@@ -41,7 +41,13 @@
     End Sub
 
     Private Sub TextBox1_TextChanged(sender As Object, e As EventArgs) Handles txtUserID.TextChanged
-
+        Dim allowed As String = ("abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ")
+        For Each c As Char In txtUserID.Text
+            If allowed.Contains(c) = False Then
+                txtUserID.Text = txtUserID.Text.Remove(txtUserID.SelectionStart - 1, 1)
+                txtUserID.Select(txtUserID.Text.Count, 0)
+            End If
+        Next
     End Sub
 
     Private Sub ShowPassBtn_Click(sender As Object, e As EventArgs) Handles btnShowPass.Click
@@ -54,7 +60,13 @@
 
     End Sub
 
-    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
+    Private Sub Button1_Click(sender As Object, e As EventArgs) Handles btnHelp.Click
+        Dim SecondForm As New Form4
+        SecondForm.Show()
+        Me.Hide()
+    End Sub
+
+    Private Sub btnForgot_Click(sender As Object, e As EventArgs) Handles btnForgot.Click
         Dim SecondForm As New Form3
         SecondForm.Show()
         Me.Hide()

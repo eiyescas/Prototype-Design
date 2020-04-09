@@ -25,15 +25,15 @@ Partial Class Form1
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Label3 = New System.Windows.Forms.Label()
-        Me.Label6 = New System.Windows.Forms.Label()
         Me.btnSignOn = New System.Windows.Forms.Button()
         Me.btnFaceID = New System.Windows.Forms.Button()
         Me.txtUserID = New System.Windows.Forms.TextBox()
         Me.txtPassword = New System.Windows.Forms.TextBox()
         Me.btnRemember = New System.Windows.Forms.Button()
-        Me.Button1 = New System.Windows.Forms.Button()
-        Me.PictureBox2 = New System.Windows.Forms.PictureBox()
+        Me.btnHelp = New System.Windows.Forms.Button()
+        Me.btnForgot = New System.Windows.Forms.Button()
         Me.btnShowPass = New System.Windows.Forms.Button()
+        Me.PictureBox2 = New System.Windows.Forms.PictureBox()
         CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
@@ -68,16 +68,6 @@ Partial Class Form1
         Me.Label3.TabIndex = 2
         Me.Label3.Text = "Password: "
         '
-        'Label6
-        '
-        Me.Label6.AutoSize = True
-        Me.Label6.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label6.Location = New System.Drawing.Point(104, 331)
-        Me.Label6.Name = "Label6"
-        Me.Label6.Size = New System.Drawing.Size(163, 15)
-        Me.Label6.TabIndex = 5
-        Me.Label6.Text = "Forgot Username/ Password"
-        '
         'btnSignOn
         '
         Me.btnSignOn.BackColor = System.Drawing.Color.MidnightBlue
@@ -94,9 +84,9 @@ Partial Class Form1
         '
         Me.btnFaceID.BackColor = System.Drawing.Color.Red
         Me.btnFaceID.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.btnFaceID.Location = New System.Drawing.Point(263, 389)
+        Me.btnFaceID.Location = New System.Drawing.Point(247, 389)
         Me.btnFaceID.Name = "btnFaceID"
-        Me.btnFaceID.Size = New System.Drawing.Size(75, 38)
+        Me.btnFaceID.Size = New System.Drawing.Size(91, 38)
         Me.btnFaceID.TabIndex = 7
         Me.btnFaceID.Text = "FaceID"
         Me.btnFaceID.UseVisualStyleBackColor = False
@@ -128,25 +118,27 @@ Partial Class Form1
         Me.btnRemember.Text = "Remember me"
         Me.btnRemember.UseVisualStyleBackColor = False
         '
-        'Button1
+        'btnHelp
         '
-        Me.Button1.BackColor = System.Drawing.Color.Gainsboro
-        Me.Button1.Font = New System.Drawing.Font("Microsoft Sans Serif", 6.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Button1.Location = New System.Drawing.Point(263, 433)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(75, 23)
-        Me.Button1.TabIndex = 15
-        Me.Button1.Text = "Need Help?"
-        Me.Button1.UseVisualStyleBackColor = False
+        Me.btnHelp.BackColor = System.Drawing.Color.Gainsboro
+        Me.btnHelp.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnHelp.Location = New System.Drawing.Point(263, 433)
+        Me.btnHelp.Name = "btnHelp"
+        Me.btnHelp.Size = New System.Drawing.Size(75, 23)
+        Me.btnHelp.TabIndex = 15
+        Me.btnHelp.Text = "Need Help?"
+        Me.btnHelp.UseVisualStyleBackColor = False
         '
-        'PictureBox2
+        'btnForgot
         '
-        Me.PictureBox2.Image = Global.Prototype_Design.My.Resources.Resources.citilogo1
-        Me.PictureBox2.Location = New System.Drawing.Point(44, 12)
-        Me.PictureBox2.Name = "PictureBox2"
-        Me.PictureBox2.Size = New System.Drawing.Size(294, 90)
-        Me.PictureBox2.TabIndex = 12
-        Me.PictureBox2.TabStop = False
+        Me.btnForgot.BackColor = System.Drawing.Color.Gainsboro
+        Me.btnForgot.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.btnForgot.Location = New System.Drawing.Point(105, 334)
+        Me.btnForgot.Name = "btnForgot"
+        Me.btnForgot.Size = New System.Drawing.Size(160, 23)
+        Me.btnForgot.TabIndex = 17
+        Me.btnForgot.Text = "Forgot Username/ Password"
+        Me.btnForgot.UseVisualStyleBackColor = False
         '
         'btnShowPass
         '
@@ -157,21 +149,30 @@ Partial Class Form1
         Me.btnShowPass.TabIndex = 16
         Me.btnShowPass.UseVisualStyleBackColor = True
         '
+        'PictureBox2
+        '
+        Me.PictureBox2.Image = Global.Prototype_Design.My.Resources.Resources.citilogo1
+        Me.PictureBox2.Location = New System.Drawing.Point(44, 12)
+        Me.PictureBox2.Name = "PictureBox2"
+        Me.PictureBox2.Size = New System.Drawing.Size(294, 90)
+        Me.PictureBox2.TabIndex = 12
+        Me.PictureBox2.TabStop = False
+        '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.AliceBlue
-        Me.ClientSize = New System.Drawing.Size(371, 522)
+        Me.ClientSize = New System.Drawing.Size(382, 522)
+        Me.Controls.Add(Me.btnForgot)
         Me.Controls.Add(Me.btnShowPass)
-        Me.Controls.Add(Me.Button1)
+        Me.Controls.Add(Me.btnHelp)
         Me.Controls.Add(Me.btnRemember)
         Me.Controls.Add(Me.PictureBox2)
         Me.Controls.Add(Me.txtPassword)
         Me.Controls.Add(Me.txtUserID)
         Me.Controls.Add(Me.btnFaceID)
         Me.Controls.Add(Me.btnSignOn)
-        Me.Controls.Add(Me.Label6)
         Me.Controls.Add(Me.Label3)
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.Label1)
@@ -186,13 +187,13 @@ Partial Class Form1
     Friend WithEvents Label1 As Label
     Friend WithEvents Label2 As Label
     Friend WithEvents Label3 As Label
-    Friend WithEvents Label6 As Label
     Friend WithEvents btnSignOn As Button
     Friend WithEvents btnFaceID As Button
     Friend WithEvents txtUserID As TextBox
     Friend WithEvents txtPassword As TextBox
     Friend WithEvents PictureBox2 As PictureBox
     Friend WithEvents btnRemember As Button
-    Friend WithEvents Button1 As Button
+    Friend WithEvents btnHelp As Button
     Friend WithEvents btnShowPass As Button
+    Friend WithEvents btnForgot As Button
 End Class
