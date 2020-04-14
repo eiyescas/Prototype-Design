@@ -5,7 +5,7 @@
         Me.Hide()
     End Sub
 
-    Private Sub MaskedTextBox1_MaskInputRejected(sender As Object, e As MaskInputRejectedEventArgs) Handles MaskedTextBox1.MaskInputRejected
+    Private Sub MaskedTextBox1_MaskInputRejected(sender As Object, e As MaskInputRejectedEventArgs) Handles mskCurrBal.MaskInputRejected
 
     End Sub
 
@@ -17,5 +17,7 @@
 
     End Sub
 
+    Private Sub ProgressBar1_Click(sender As Object, e As EventArgs) Handles ProgressBar1.Click
 
+    End Sub
 End Class

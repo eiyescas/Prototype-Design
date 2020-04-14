@@ -29,9 +29,9 @@ Partial Class Form2
         Me.Label4 = New System.Windows.Forms.Label()
         Me.Label5 = New System.Windows.Forms.Label()
         Me.ProgressBar1 = New System.Windows.Forms.ProgressBar()
-        Me.MaskedTextBox1 = New System.Windows.Forms.MaskedTextBox()
-        Me.MaskedTextBox2 = New System.Windows.Forms.MaskedTextBox()
-        Me.MaskedTextBox3 = New System.Windows.Forms.MaskedTextBox()
+        Me.mskCurrBal = New System.Windows.Forms.MaskedTextBox()
+        Me.mskAvCredit1 = New System.Windows.Forms.MaskedTextBox()
+        Me.mskAvCredit2 = New System.Windows.Forms.MaskedTextBox()
         Me.Button1 = New System.Windows.Forms.Button()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Button2 = New System.Windows.Forms.Button()
@@ -110,32 +110,32 @@ Partial Class Form2
         Me.ProgressBar1.TabIndex = 19
         Me.ProgressBar1.Value = 20
         '
-        'MaskedTextBox1
+        'mskCurrBal
         '
-        Me.MaskedTextBox1.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.MaskedTextBox1.Location = New System.Drawing.Point(268, 113)
-        Me.MaskedTextBox1.Mask = "$"
-        Me.MaskedTextBox1.Name = "MaskedTextBox1"
-        Me.MaskedTextBox1.Size = New System.Drawing.Size(100, 20)
-        Me.MaskedTextBox1.TabIndex = 20
+        Me.mskCurrBal.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.mskCurrBal.Location = New System.Drawing.Point(268, 113)
+        Me.mskCurrBal.Mask = "$"
+        Me.mskCurrBal.Name = "mskCurrBal"
+        Me.mskCurrBal.Size = New System.Drawing.Size(100, 20)
+        Me.mskCurrBal.TabIndex = 20
         '
-        'MaskedTextBox2
+        'mskAvCredit1
         '
-        Me.MaskedTextBox2.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.MaskedTextBox2.Location = New System.Drawing.Point(205, 139)
-        Me.MaskedTextBox2.Mask = "$"
-        Me.MaskedTextBox2.Name = "MaskedTextBox2"
-        Me.MaskedTextBox2.Size = New System.Drawing.Size(100, 20)
-        Me.MaskedTextBox2.TabIndex = 21
+        Me.mskAvCredit1.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.mskAvCredit1.Location = New System.Drawing.Point(205, 139)
+        Me.mskAvCredit1.Mask = "$"
+        Me.mskAvCredit1.Name = "mskAvCredit1"
+        Me.mskAvCredit1.Size = New System.Drawing.Size(100, 20)
+        Me.mskAvCredit1.TabIndex = 21
         '
-        'MaskedTextBox3
+        'mskAvCredit2
         '
-        Me.MaskedTextBox3.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.MaskedTextBox3.Location = New System.Drawing.Point(333, 139)
-        Me.MaskedTextBox3.Mask = "$"
-        Me.MaskedTextBox3.Name = "MaskedTextBox3"
-        Me.MaskedTextBox3.Size = New System.Drawing.Size(100, 20)
-        Me.MaskedTextBox3.TabIndex = 22
+        Me.mskAvCredit2.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.mskAvCredit2.Location = New System.Drawing.Point(333, 139)
+        Me.mskAvCredit2.Mask = "$"
+        Me.mskAvCredit2.Name = "mskAvCredit2"
+        Me.mskAvCredit2.Size = New System.Drawing.Size(100, 20)
+        Me.mskAvCredit2.TabIndex = 22
         '
         'Button1
         '
@@ -246,9 +246,9 @@ Partial Class Form2
         Me.Controls.Add(Me.Button2)
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.Button1)
-        Me.Controls.Add(Me.MaskedTextBox3)
-        Me.Controls.Add(Me.MaskedTextBox2)
-        Me.Controls.Add(Me.MaskedTextBox1)
+        Me.Controls.Add(Me.mskAvCredit2)
+        Me.Controls.Add(Me.mskAvCredit1)
+        Me.Controls.Add(Me.mskCurrBal)
         Me.Controls.Add(Me.ProgressBar1)
         Me.Controls.Add(Me.Label5)
         Me.Controls.Add(Me.Label4)
@@ -271,9 +271,9 @@ Partial Class Form2
     Friend WithEvents Label4 As Label
     Friend WithEvents Label5 As Label
     Friend WithEvents ProgressBar1 As ProgressBar
-    Friend WithEvents MaskedTextBox1 As MaskedTextBox
-    Friend WithEvents MaskedTextBox2 As MaskedTextBox
-    Friend WithEvents MaskedTextBox3 As MaskedTextBox
+    Friend WithEvents mskCurrBal As MaskedTextBox
+    Friend WithEvents mskAvCredit1 As MaskedTextBox
+    Friend WithEvents mskAvCredit2 As MaskedTextBox
     Friend WithEvents Button1 As Button
     Friend WithEvents Label2 As Label
     Friend WithEvents Button2 As Button
